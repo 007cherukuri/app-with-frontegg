@@ -1,5 +1,5 @@
 import './App.css';
-// import { useEffect } from 'react';
+import { useEffect } from 'react';
 import { ContextHolder } from '@frontegg/rest-api';
 import { useAuth, useLoginWithRedirect } from "@frontegg/react";
 
@@ -8,11 +8,11 @@ function App() {
   const loginWithRedirect = useLoginWithRedirect();
 
   // Uncomment this to redirect to login automatically
-  // useEffect(() => {
-  //   if (!isAuthenticated) {
-  // loginWithRedirect();
-  //   }
-  // }, [isAuthenticated, loginWithRedirect]);
+  useEffect(() => {
+     if (!isAuthenticated) {
+  loginWithRedirect();
+     }
+   }, [isAuthenticated, loginWithRedirect]);
 
   const logout = () => {
     const baseUrl = ContextHolder.getContext().baseUrl;
@@ -38,9 +38,9 @@ function App() {
         </div>
       ) : (
         <div class="center">
-          <img src='https://qx-fleet-s-qa.azurewebsites.net/static/images/logo.png'></img>
+          <img src="https://qx-fleet-s-qa.azurewebsites.net/static/images/logo.png"></img>
           <br></br>
-         <button onClick={() => loginWithRedirect()}>Click me to login</button>
+          <button onClick={() => loginWithRedirect()}>Click me to login</button>
         </div>
       )}
     </div>

@@ -7,8 +7,8 @@ import './index.css';
 import { FronteggProvider } from '@frontegg/react';
 
 const contextOptions = {
-  baseUrl: 'https://app-pl6kejjbrfvm.frontegg.com',
-  clientId: 'c623c0c1-dd2a-4ee8-a46f-6c306918feba'
+  baseUrl: 'https://app-5ov5vvhun5ek.frontegg.com',
+  clientId: 'ad20e5db-9dac-4bfc-8ede-962e4074c711'
 };
 
 // For react 18: 
