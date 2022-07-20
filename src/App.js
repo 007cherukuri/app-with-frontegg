@@ -40,7 +40,7 @@ function App() {
         <div class="center">
           <img src='https://qx-fleet-s-qa.azurewebsites.net/static/images/logo.png'></img>
           <br></br>
-          <button onClick={() => loginWithRedirect()}>Click me to login</button>
+         <button onClick={() => loginWithRedirect()}>Click me to login</button>
         </div>
       )}
     </div>
